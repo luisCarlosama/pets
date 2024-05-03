@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets | New user</title>
-    <link rel="icon" type="icon/png" href="icon/png-transparent-logo-petshop-pet-store.png">
+    <link rel="icon" type="icon/png" href="../pets/src/icon/png-transparent-logo-petshop-pet-store.png ">
+    <link rel="stylesheet" href="../style.css">
+
 </head>
+
 <body>
     <center>
         <img src="imagen/OIP.jpg" width="50">
-    </center>
 
-    <form name="signup-form" action="backend/signup.php" method="post">
-        <table border="0" align="center"> 
-                <tr><td><input type="text" name="fname" required> </td></tr>
-                <tr></tr>
-                <tr><td><input type="text"name="email" placeholder="carlosam@gmail.com" required> </td></tr>
-                <tr></tr>
-                <tr><td><input type="text"  name="passwd" placeholder="*********" required> </td></tr>
-                <td></td><td></td>
-                <tr><td align="center"><button>Register</button></td>
+
+        <form name="signup-form" action="backend/signup.php" method="post">
+            <table border="0" align="center">
+                <div>
+                    <tr>
+                        <td><input type="text" name="fname" placeholder="fullname" required></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type="text" name="email" placeholder="carlosam@gmail.com" required> </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type="text" name="passwd" placeholder="*********" required> </td>
+                    </tr>
+                    <td></td>
+                    <td></td>
+                    <tr>
+                        <td align="center"><button>Register</button></td>
+                    <tr>
+                        <td align="center"><a href="signin.html">Go to login</a>
+                </div>
+
             </table>
-    </form>
-    
+        </form>
+    </center>
 </body>
+
 </html>

@@ -13,13 +13,9 @@ $conn = pg_connect(
      password=$password
      port=$port");
      if (!$conn) {
-        die("connect error". preg_last_error());
-     } 
+                 die("connect error". preg_last_error());
+                 } 
      else { 
-        echo"Success !!! ";
-     }
-
-
-
-
+             echo"Success !!! ";
+          }
 ?>
