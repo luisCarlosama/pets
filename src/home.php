@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+    session_start();
+    if (isset($_SESSION["id_user"])){
+        header("location:home.php");
+    }else{
+        header("location:signin.php");
+    }
+?> <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +13,7 @@
     <title>pets - home</title>
 </head>
 <body>
-    <a href = "#">Sign Out</a>
+    <a href = "index.html">Sign Out</a>
+
 </body>
 </html>
