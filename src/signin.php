@@ -1,10 +1,10 @@
 <?php
     session_start();
-    if(!isset($_SESSION["id_user"])){
+    if(isset($_SESSION["id_user"])){
         //header("Location:home.php");
-        header("refresh:0;url=signin.php");
+        header("refresh:0;url=home.php");
         exit;
-    }
+    }       
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@
         <img src="imagen/images (1)22.png" width="50">
     
 
-    <form name = "signin-form" action="backend/signin.php" method="post">
+    <form action="backend/signin.php" method="post">
         <table border="0" align="center"> 
                 <div>
                     <tr><td><input type="text"name="email" placeholder="carlosam@gmail.com" required> </td></tr>
